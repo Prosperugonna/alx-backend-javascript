@@ -1,5 +1,5 @@
-/* eslint-disable*/
-export default function getStudentIdsSum(exac) {
-  const arr = Array.from(exac);
-  return arr.reduce((acc, student) => acc + student.id, 0 );
+function getStudentsByLocation(students, city) {
+  return students.filter((student) => student.location === city);
 }
+
+export default getStudentsByLocation;
